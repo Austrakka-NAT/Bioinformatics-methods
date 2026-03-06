@@ -1,23 +1,9 @@
 site_name: AusTrakka NAT Bioinformatics Methods Documentation
-site_url: https://mduphl.github.io/bohra/
+site_url: https://austrakka-nat.github.io/Bioinformatics-methods/
 
 nav:
   - About: index.md
-  - Installation: installation.md
-  - Running Bohra:
-      - Overview: usage/overview.md
-      - Migration bohra2 to bohra3: usage/migration.md
-      - Basic pipeline: usage/basic.md
-      - Assembly pipeline: usage/assemble.md
-      - Comparative pipeline: usage/comparative.md
-      - Full pipeline: usage/full.md
-      - TB pipeline: usage/tb.md
-  - Guides:
-      - Quality Control: guides/quality_control.md
-      - Comparative Genomics: guides/comparative_genomics.md
-      - TB Analysis: guides/tb_analysis.md
-  - Contributing: contributing.md
-  - License: license.md
+  - SE surveillance: se_surveillance.md
 theme:
   name: material
   logo: images/logo.svg
@@ -30,12 +16,12 @@ features:
     - content.code.copy
     - content.code.select
 
-repo_url: https://github.com/MDU-PHL/bohra
-repo_name: MDU-PHL/bohra
+  repo_url: https://github.com/AusTrakka-NAT/Bioinformatics-methods
+  repo_name: AusTrakka-NAT/Bioinformatics-methods
 extra:
   social:
     - icon: fontawesome/brands/github 
-      link: https://github.com/MDU-PHL/bohra
+      link: https://github.com/AusTrakka-NAT/Bioinformatics-methods
 
 markdown_extensions:
   - attr_list
