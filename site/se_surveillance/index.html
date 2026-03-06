@@ -551,72 +551,18 @@
 <h2 id="interpetation-of-genomic-relatedness">Interpetation of genomic relatedness</h2>
 <p>For each cgT, heirarchical singl-linkage clustering with a 5 SNP treshold is used to determine the degree of genomic relatedness. This threshold has been shown to identify epidemiologically relevant relationships. Single-linkage clustering identifies groups of sequences which are &lt;= 5 SNPs from at least one other sequence in the cgT.</p>
 <h2 id="software-versions">Software versions</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Tool</th>
-<th style="text-align: left;">Version</th>
-<th style="text-align: left;">Reference</th>
-<th style="text-align: left;">Database</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">chewBBACA</td>
-<td style="text-align: left;">v 2.16.0</td>
-<td style="text-align: left;">Publication - https://academic.oup.com/nar/article/49/D1/D660/5929238?login=false Tool - https://chewbbaca.readthedocs.io/en/latest/user/getting_started/overview.html</td>
-<td style="text-align: left;">https://zenodo.org/records/1323684 downloaded 2023-10-01</td>
-</tr>
-<tr>
-<td style="text-align: left;">seqkit</td>
-<td style="text-align: left;">seqkit v2.12.0</td>
-<td style="text-align: left;">Publication - https://doi.org/10.1002/imt2.191 Tool - https://bioinf.shenwei.me/seqkit/</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">kmc</td>
-<td style="text-align: left;">K-Mer Counter (KMC) ver. 3.2.4 (2024-02-09)</td>
-<td style="text-align: left;">Publication - https://doi.org/10.1093/bioinformatics/btx304 Tool - https://github.com/refresh-bio/KMC</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">shovill</td>
-<td style="text-align: left;">shovill 1.4.2</td>
-<td style="text-align: left;">Tool - https://github.com/tseemann/shovill</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">kraken2</td>
-<td style="text-align: left;">Kraken version 2.17.1</td>
-<td style="text-align: left;">Publication - https://doi.org/10.1186/s13059-019-1891-0 Tool - https://github.com/DerrickWood/kraken2</td>
-<td style="text-align: left;">/opt/resources/k2_pluspfp_20240605</td>
-</tr>
-<tr>
-<td style="text-align: left;">abritamr</td>
-<td style="text-align: left;">abritamr 1.0.20</td>
-<td style="text-align: left;">Publication - https://doi.org/10.1038/s41467-022-35713-4 Tool - https://zenodo.org/records/12514579</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">mobsuite</td>
-<td style="text-align: left;">mob_recon 3.1.9</td>
-<td style="text-align: left;">Publication - https://doi.org/10.1099/mgen.0.000435 Tool - https://github.com/phac-nml/mob-suite</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">mlst</td>
-<td style="text-align: left;">mlst 2.19</td>
-<td style="text-align: left;">Tool - https://github.com/tseemann/mlst</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">sistr</td>
-<td style="text-align: left;">(sistr 1.1.1)</td>
-<td style="text-align: left;">Tool - https://github.com/phac-nml/sistr_cmd</td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
+<p>All tools (except cgMLST) are implemented within the <a href="https://mdu-phl.github.io/bohra/">bohra pipeline</a> v 3.4.3
+|Tool| Version | Reference  | Database |
+|:-- |:-- | :-- | :-- |
+| chewBBACA | v 2.16.0 | Publication - https://academic.oup.com/nar/article/49/D1/D660/5929238?login=false Tool - https://chewbbaca.readthedocs.io/en/latest/user/getting_started/overview.html | https://zenodo.org/records/1323684 downloaded 2023-10-01 | 
+|seqkit | seqkit v2.12.0 | Publication - https://doi.org/10.1002/imt2.191 Tool - https://bioinf.shenwei.me/seqkit/  ||
+| kmc| K-Mer Counter (KMC) ver. 3.2.4 (2024-02-09)  | Publication - https://doi.org/10.1093/bioinformatics/btx304 Tool - https://github.com/refresh-bio/KMC ||    <br />
+| shovill|  shovill 1.4.2   | Tool - https://github.com/tseemann/shovill    ||
+|kraken2 |Kraken version 2.17.1 | Publication - https://doi.org/10.1186/s13059-019-1891-0 Tool - https://github.com/DerrickWood/kraken2 | /opt/resources/k2_pluspfp_20240605|
+|abritamr   |abritamr 1.0.20 | Publication - https://doi.org/10.1038/s41467-022-35713-4 Tool - https://zenodo.org/records/12514579  ||
+| mobsuite  |   mob_recon 3.1.9 | Publication - https://doi.org/10.1099/mgen.0.000435 Tool - https://github.com/phac-nml/mob-suite || <br />
+| mlst  |   mlst 2.19 | Tool - https://github.com/tseemann/mlst ||
+| sistr |   (sistr 1.1.1) | Tool - https://github.com/phac-nml/sistr_cmd ||</p>
 
 
 

@@ -43,6 +43,7 @@ For each cgT, heirarchical singl-linkage clustering with a 5 SNP treshold is use
 ## Software versions
 
 All tools (except cgMLST) are implemented within the [bohra pipeline](https://mdu-phl.github.io/bohra/) v 3.4.3
+
 |Tool| Version | Reference	| Database |
 |:-- |:-- | :-- | :-- |
 | chewBBACA | v 2.16.0 | Publication - https://academic.oup.com/nar/article/49/D1/D660/5929238?login=false Tool - https://chewbbaca.readthedocs.io/en/latest/user/getting_started/overview.html | https://zenodo.org/records/1323684 downloaded 2023-10-01 | 
