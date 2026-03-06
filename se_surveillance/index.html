@@ -345,6 +345,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#core-snp-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core SNP analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpetation-of-genomic-relatedness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpetation of genomic relatedness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software versions
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -412,6 +445,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#core-snp-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core SNP analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpetation-of-genomic-relatedness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpetation of genomic relatedness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software versions
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -473,12 +539,84 @@
 </table>
 <p>Sequences which pass these criteria are used in downstream analsyis.</p>
 <h2 id="single-sample-results">Single sample results</h2>
-<p>MLST and detection of AMR mechanisms is also undertaken on all sequences which pass the quality assessment. </p>
+<p><a href="https://github.com/tseemann/mlst">MLST</a> and detection of AMR mechanisms is also undertaken, using <a href="https://github.com/MDU-PHL/abritamr">abritamr</a> on all sequences which pass the quality assessment. </p>
 <h2 id="core-genome-mlst">Core genome MLST</h2>
 <p>Core genome MLST is used to group sequences into cgMLST groups for further detailed analysis. This approach allows for maximisation of core genome recovery and high resolution interpretations of relatedness to aid in informing the degree of relatedness.</p>
-<p>cgMLST as implemented by the ANAT, utilises a <a href="https://zenodo.org/records/1323684">scheme of 3016</a> genes and the allele calling tool <a href="https://chewbbaca.readthedocs.io/en/latest/user/getting_started/overview.html">chewBBACA</a> v2.6.0 to detect profiles.</p>
+<p>cgMLST as implemented by the ANAT, utilises a <a href="https://zenodo.org/records/1323684">scheme of 3016</a> genes and the allele calling tool <a href="https://chewbbaca.readthedocs.io/en/latest/user/getting_started/overview.html">chewBBACA</a> to detect profiles.</p>
 <p>Only sequences which have &gt;90% alleles detected are used in further analysis.</p>
 <p>Distances between profiles is calculated with cgmlst-dists (v1.2.0) and these distances are clustered using heirarchical complete linkage with a 50 allele threshold. This method identifies groups where all sequences within the group are &lt;= 50 alleles from every other sequence in the group.</p>
+<h2 id="core-snp-analysis">Core SNP analysis</h2>
+<p>For each cgMLST group (cgT) which contains &gt;= 5 sequences a comparative core genome SNP analysis is undertaken using the reference genome NC 011294.1 Salmonella enterica subsp. enterica serovar Enteritidis str. P125109. </p>
+<p>Paired-end reads are aligned, variants identified and a core genome calculated using <a href="https://github.com/tseemann/snippy">snippy</a>. Pairwise SNP distances and phylogenetic trees are calculated using <a href="https://github.com/tseemann/snpdists">snp-dists</a>.</p>
+<h2 id="interpetation-of-genomic-relatedness">Interpetation of genomic relatedness</h2>
+<p>For each cgT, heirarchical singl-linkage clustering with a 5 SNP treshold is used to determine the degree of genomic relatedness. This threshold has been shown to identify epidemiologically relevant relationships. Single-linkage clustering identifies groups of sequences which are &lt;= 5 SNPs from at least one other sequence in the cgT.</p>
+<h2 id="software-versions">Software versions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tool</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Reference</th>
+<th style="text-align: left;">Database</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">chewBBACA</td>
+<td style="text-align: left;">v 2.16.0</td>
+<td style="text-align: left;">Publication - https://academic.oup.com/nar/article/49/D1/D660/5929238?login=false Tool - https://chewbbaca.readthedocs.io/en/latest/user/getting_started/overview.html</td>
+<td style="text-align: left;">https://zenodo.org/records/1323684 downloaded 2023-10-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">seqkit</td>
+<td style="text-align: left;">seqkit v2.12.0</td>
+<td style="text-align: left;">Publication - https://doi.org/10.1002/imt2.191 Tool - https://bioinf.shenwei.me/seqkit/</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">kmc</td>
+<td style="text-align: left;">K-Mer Counter (KMC) ver. 3.2.4 (2024-02-09)</td>
+<td style="text-align: left;">Publication - https://doi.org/10.1093/bioinformatics/btx304 Tool - https://github.com/refresh-bio/KMC</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">shovill</td>
+<td style="text-align: left;">shovill 1.4.2</td>
+<td style="text-align: left;">Tool - https://github.com/tseemann/shovill</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">kraken2</td>
+<td style="text-align: left;">Kraken version 2.17.1</td>
+<td style="text-align: left;">Publication - https://doi.org/10.1186/s13059-019-1891-0 Tool - https://github.com/DerrickWood/kraken2</td>
+<td style="text-align: left;">/opt/resources/k2_pluspfp_20240605</td>
+</tr>
+<tr>
+<td style="text-align: left;">abritamr</td>
+<td style="text-align: left;">abritamr 1.0.20</td>
+<td style="text-align: left;">Publication - https://doi.org/10.1038/s41467-022-35713-4 Tool - https://zenodo.org/records/12514579</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">mobsuite</td>
+<td style="text-align: left;">mob_recon 3.1.9</td>
+<td style="text-align: left;">Publication - https://doi.org/10.1099/mgen.0.000435 Tool - https://github.com/phac-nml/mob-suite</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">mlst</td>
+<td style="text-align: left;">mlst 2.19</td>
+<td style="text-align: left;">Tool - https://github.com/tseemann/mlst</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">sistr</td>
+<td style="text-align: left;">(sistr 1.1.1)</td>
+<td style="text-align: left;">Tool - https://github.com/phac-nml/sistr_cmd</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 
 
 
