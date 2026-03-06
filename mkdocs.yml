@@ -15,9 +15,8 @@ theme:
 features:
     - content.code.copy
     - content.code.select
-
-  repo_url: https://github.com/AusTrakka-NAT/Bioinformatics-methods
-  repo_name: AusTrakka-NAT/Bioinformatics-methods
+repo_url: https://github.com/AusTrakka-NAT/Bioinformatics-methods
+repo_name: AusTrakka-NAT/Bioinformatics-methods
 extra:
   social:
     - icon: fontawesome/brands/github 
