@@ -4,6 +4,8 @@ site_url: https://austrakka-nat.github.io/Bioinformatics-methods/
 nav:
   - About: index.md
   - SE surveillance: se_surveillance.md
+  - SC2 surveillance: sc2_surveillance.md
+  - MTB surveillance: mtb_surveillance.md
 theme:
   name: material
   logo: images/logo.jpg
