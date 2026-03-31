@@ -2,10 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://austrakka-nat.github.io/Bioinformatics-methods/</loc>
-         <lastmod>2026-03-06</lastmod>
+         <lastmod>2026-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://austrakka-nat.github.io/Bioinformatics-methods/mtb_surveillance/</loc>
+         <lastmod>2026-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://austrakka-nat.github.io/Bioinformatics-methods/sc2_surveillance/</loc>
+         <lastmod>2026-03-31</lastmod>
     </url>
     <url>
          <loc>https://austrakka-nat.github.io/Bioinformatics-methods/se_surveillance/</loc>
-         <lastmod>2026-03-06</lastmod>
+         <lastmod>2026-03-31</lastmod>
     </url>
 </urlset>
