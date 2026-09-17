@@ -32,7 +32,7 @@ Distances between profiles is calculated with cgmlst-dists (v1.2.0) and these di
 
 ## Core SNP analysis
 
-For each cgMLST group (cgT) which contains >= 5 sequences a comparative core genome SNP analysis is undertaken using the reference genome NC 011294.1 Salmonella enterica subsp. enterica serovar Enteritidis str. P125109. 
+Comparative core genome SNP analysis is undertaken on all sequences within the 18 month rolling window, sing the reference genome NC 011294.1 Salmonella enterica subsp. enterica serovar Enteritidis str. P125109. 
 
 Paired-end reads are aligned, variants identified and a core genome calculated using [snippy](https://github.com/tseemann/snippy). Pairwise SNP distances and phylogenetic trees are calculated using [snp-dists](https://github.com/tseemann/snpdists).
 
