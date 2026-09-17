@@ -2,6 +2,7 @@ name: Deploy Documentation
 on:
   push:
     branches:
+      - main
       - master
     paths:
       - 'docs/*.md'
@@ -29,4 +30,4 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs build --force
