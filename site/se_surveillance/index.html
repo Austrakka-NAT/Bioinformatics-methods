@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -370,6 +370,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#nomenclature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nomenclature
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#software-versions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -524,6 +535,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#nomenclature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nomenclature
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#software-versions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -602,10 +624,12 @@
 <p>Only sequences which have &gt;90% alleles detected are used in further analysis.</p>
 <p>Distances between profiles is calculated with cgmlst-dists (v1.2.0) and these distances are clustered using heirarchical complete linkage with a 50 allele threshold. This method identifies groups where all sequences within the group are &lt;= 50 alleles from every other sequence in the group.</p>
 <h2 id="core-snp-analysis">Core SNP analysis</h2>
-<p>For each cgMLST group (cgT) which contains &gt;= 5 sequences a comparative core genome SNP analysis is undertaken using the reference genome NC 011294.1 Salmonella enterica subsp. enterica serovar Enteritidis str. P125109. </p>
+<p>Comparative core genome SNP analysis is undertaken on all sequences within the 18 month rolling window, sing the reference genome NC 011294.1 Salmonella enterica subsp. enterica serovar Enteritidis str. P125109. </p>
 <p>Paired-end reads are aligned, variants identified and a core genome calculated using <a href="https://github.com/tseemann/snippy">snippy</a>. Pairwise SNP distances and phylogenetic trees are calculated using <a href="https://github.com/tseemann/snpdists">snp-dists</a>.</p>
 <h2 id="interpetation-of-genomic-relatedness">Interpetation of genomic relatedness</h2>
-<p>For each cgT, heirarchical singl-linkage clustering with a 5 SNP treshold is used to determine the degree of genomic relatedness. This threshold has been shown to identify epidemiologically relevant relationships. Single-linkage clustering identifies groups of sequences which are &lt;= 5 SNPs from at least one other sequence in the cgT.</p>
+<p>Heirarchical singl-linkage clustering with a 5 SNP treshold is used to determine the degree of genomic relatedness. This threshold has been shown to identify epidemiologically relevant relationships. Single-linkage clustering identifies groups of sequences which are &lt;= 5 SNPs from at least one other sequence.</p>
+<h2 id="nomenclature">Nomenclature</h2>
+<p>cgT groups and SNP cluster nomenclature is maintained utilising <a href="https://github.com/kristyhoran/noms">noms</a>. Where addition of news sequeunces causes an existing group to split or merge, the new name of the new group reflects the name of the majority contributing group.</p>
 <h2 id="software-versions">Software versions</h2>
 <p>All tools (except cgMLST) are implemented within the <a href="https://mdu-phl.github.io/bohra/">bohra pipeline</a> v 3.4.3</p>
 <table>
@@ -742,7 +766,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

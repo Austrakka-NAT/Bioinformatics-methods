@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -291,6 +291,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SC2 surveillance
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -307,6 +325,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lineage-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lineage assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collapsing-lineage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collapsing lineage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phylogenetic-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phylogenetic tree
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality control
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software versions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -359,6 +451,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lineage-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lineage assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collapsing-lineage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collapsing lineage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phylogenetic-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phylogenetic tree
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality control
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software versions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -378,6 +533,79 @@
 
 
 <h1 id="sars-cov-2-surveillance">SARS-CoV-2 Surveillance</h1>
+<h2 id="lineage-assessment">Lineage assessment</h2>
+<p>Sequences submitted to AusTrakka are in the form of FASTA sequences, whereby uploaders only provide sequences that meet their own minimum required depth coverage. </p>
+<p>FASTA sequences are assessed through Nextclade with the latest dataset to determine lineage.</p>
+<h2 id="collapsing-lineage">Collapsing lineage</h2>
+<p>The pango-collapse tool is used to make meaningful assessments of assigned lineages. </p>
+<p>For AusTrakka purposes, the lineages are collapsed twice; 1) to a "Family" level, equivalent to VOCs/VOIs, and 2) to circulating variants under monitoring (VUMs) as reported by the <a href="https://www.who.int/activities/tracking-SARS-CoV-2-variants">WHO</a> </p>
+<h2 id="phylogenetic-tree">Phylogenetic tree</h2>
+<p><a href="github.com/W-L/ProblematicSites_SARS-CoV2/blob/master/problematic_sites_sarsCov2.vcf">Problematic sites</a> are masked before constructing a phylogenetic tree through <a href="https://github.com/yatisht/usher">UShER</a></p>
+<h2 id="quality-control">Quality control</h2>
+<p>All sequences submitted to AusTrakka undergo quality assessment to determine the suitability of the sequences for reporting.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">QC metric</th>
+<th style="text-align: left;">Criteria</th>
+<th style="text-align: left;">Lineage Value</th>
+<th style="text-align: left;">Bioinformatics tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Genome Coverage (%)</td>
+<td style="text-align: left;">$\ge90$</td>
+<td style="text-align: left;">"LowCoverage"</td>
+<td style="text-align: left;"><a href="https://github.com/nextstrain/nextclade">nextclade</a> with the MN908947.3.fna reference</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nextclade Quality Status</td>
+<td style="text-align: left;">"bad"</td>
+<td style="text-align: left;">"Unassigned"</td>
+<td style="text-align: left;"><a href="https://github.com/nextstrain/nextclade">nextclade</a> with the MN908947.3.fna reference</td>
+</tr>
+</tbody>
+</table>
+<p>Any sequence that falls outside this range will be flagged as 'Low Coverage' or 'Unassigned' and will be excluded from phylogenetic analysis and reporting. </p>
+<h2 id="software-versions">Software versions</h2>
+<p>All tools are implemented through the <a href="https://github.com/AusTrakka/austrakka-sc2-tree">austrakka-sc2-tree pipeline</a> v 0.14.2</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tool</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Reference</th>
+<th style="text-align: left;">Database</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">nextclade</td>
+<td style="text-align: left;">v 3.3.1</td>
+<td style="text-align: left;">https://github.com/nextstrain/nextclade</td>
+<td style="text-align: left;">latest through nextclade dataset get</td>
+</tr>
+<tr>
+<td style="text-align: left;">pango-collapse</td>
+<td style="text-align: left;">v 0.8.2</td>
+<td style="text-align: left;">https://github.com/MDU-PHL/pango-collapse</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">phytest</td>
+<td style="text-align: left;">v 1.3.0</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">usher</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">https://github.com/yatisht/usher</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -446,7 +674,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
