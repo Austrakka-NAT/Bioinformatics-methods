@@ -38,7 +38,11 @@ Paired-end reads are aligned, variants identified and a core genome calculated u
 
 ## Interpetation of genomic relatedness
 
-For each cgT, heirarchical singl-linkage clustering with a 5 SNP treshold is used to determine the degree of genomic relatedness. This threshold has been shown to identify epidemiologically relevant relationships. Single-linkage clustering identifies groups of sequences which are <= 5 SNPs from at least one other sequence in the cgT.
+Heirarchical singl-linkage clustering with a 5 SNP treshold is used to determine the degree of genomic relatedness. This threshold has been shown to identify epidemiologically relevant relationships. Single-linkage clustering identifies groups of sequences which are <= 5 SNPs from at least one other sequence.
+
+## Nomenclature
+
+cgT groups and SNP cluster nomenclature is maintained utilising [noms](https://github.com/kristyhoran/noms). Where addition of news sequeunces causes an existing group to split or merge, the new name of the new group reflects the name of the majority contributing group.
 
 ## Software versions
 
